@@ -1,0 +1,13 @@
+{
+    "name": "Twitch Bonus-Chest Clicker",
+    "version": "0.1",
+    "description": "Automatic clicks the Twitch bonus chest on streamchat.",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": ["https://www.twitch.tv/*"],
+            "run_at": "document_start",
+            "js": ["content_script.js"]
+        }
+    ]
+  }
